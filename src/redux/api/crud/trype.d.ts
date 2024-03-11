@@ -9,7 +9,6 @@ export namespace TODO {
   }[];
   type CreateRequests = {
     title: string;
-    // _id: number;
     img: string;
   };
   type CreateResponse = {
@@ -18,8 +17,8 @@ export namespace TODO {
     img: string;
   }[];
   type UpdataResponse = {
+    _id?: number;
     newData: {
-      _id?: number;
       title: string;
       img: string;
     };

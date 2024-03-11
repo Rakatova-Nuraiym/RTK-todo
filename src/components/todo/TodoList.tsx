@@ -6,11 +6,7 @@ import {
   usePostTodoMutation,
 } from "../../redux/api/crud";
 import scss from "./todo.module.scss";
-interface Todo {
-  title: string;
-  img: string;
-  _id: number;
-}
+
 
 const TodoList = () => {
   const [edit, setEdit] = useState<number | null>(null);
@@ -47,11 +43,7 @@ const TodoList = () => {
     setEdit(null);
   };
 
-  const editFunc = (item: Todo) => {
-    setEditTitle(item.title);
-    setEditUrl(item.img);
-    setEdit(item._id);
-  };
+
 
   return (
     <div className={scss.mainTodo}>
@@ -100,8 +92,9 @@ const TodoList = () => {
                 </button>
                 <button
                   onClick={() => {
-                    editFunc(item);
-                    setEdit(item._id);
+                     setEditTitle(item.title);
+                     setEditUrl(item.img);
+                     setEdit(item._id);
                   }}
                 >
                   edit

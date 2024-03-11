@@ -25,7 +25,7 @@ const api = index.injectEndpoints({
       }),
       invalidatesTags: ["crud"],
     }),
-    editTodo: builder.mutation<TODO.UpdataResponse, TODO.UpdataRequest>({
+    editTodo: builder.mutation<TODO.UpdataRequest, TODO.UpdataResponse>({
       query: ({ _id, newData }) => ({
         url: `/${_id}`,
         method: "PATCH",
