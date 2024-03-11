@@ -1,0 +1,55 @@
+.mainTodo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+
+  input {
+    width: 200px;
+    height: 35px;
+    margin: 10px;
+    border-radius: 4px;
+    border: 1px solid green;
+    text-align: center;
+  }
+
+  .addButton {
+    width: 100px;
+    height: 30px;
+    background-color: green;
+    border: none;
+    color: white;
+    font-size: 17px;
+    border-radius: 12px;
+  }
+  .todoCard {
+    display: flex;
+    gap: 30px;
+    .todo {
+      width: 300px;
+      height: 460px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid green;
+      gap: 10px;
+
+      .deleteButton {
+        width: 100px;
+        height: 30px;
+        background-color: red;
+        border: none;
+        color: white;
+        font-size: 17px;
+        border-radius: 12px;
+      }
+      img {
+        width: 280px;
+        height: 300px;
+        border-radius: 10px;
+      }
+    }
+  }
+}
